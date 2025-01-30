@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import "tailwindcss/preflight.css" layer(base);
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+* {
+    @apply transition-colors duration-500
+}
+
+@layer base {
+    .bg {
+        @apply bg-[var(--bg-light)] dark:bg-[var(--bg-dark)]
+    }
+
+    .title {
+        @apply text-[var(--title-light)] dark:text-[var(--title-dark)]
+    }
+
+    .text {
+        @apply text-[var(--text-light)] dark:text-[var(--text-dark)]
+    }
+
+    .scale {
+        @apply !transition-all !duration-300 hover:scale-125
+    }
+
+    .durationAll-500 {
+        @apply !transition-all !duration-500
+    }
+}
+
+@theme {
+    --bg-light: #E3E2DF;
+    --bg-dark: #1A1A1D;
+
+    --title-light: #5D001E;
+    --title-dark: #C3073F; 
+
+    --text-light: #1E1E1E;
+    --text-dark: #ECD06F;
+
+    --border-light: #9A1750;
+    --border-dark: #950740;
+
+    --additional-text-light: #E3AFBC;
+    --additional-text-dark: #4E4E50;
+
+    --support-light: #EE4C7C;
+    --support-dark: #C3073F;
+}
+
