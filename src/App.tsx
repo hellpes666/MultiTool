@@ -1,15 +1,19 @@
 import { useSelector } from 'react-redux';
 import { RootState } from './store/store';
-import { Header } from './components';
+import { Header, MainPage } from './components';
+import Container from './components/Container';
 
 function App() {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
 
   return (
     <div
-      className={`min-h-dvh bg-[var(--bg-dark)] px-24 py-4 dark:bg-[var(--bg-light)] ${darkMode && 'dark'}`}
+      className={`h-full min-h-dvh w-full bg-[var(--bg-dark)] py-4 dark:bg-[var(--bg-light)] ${darkMode && 'dark'}`}
     >
-      <Header />
+      <Header darkMode={darkMode} />
+      <Container>
+        <MainPage />
+      </Container>
     </div>
   );
 }

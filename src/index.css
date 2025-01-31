@@ -5,6 +5,7 @@
 
 * {
     @apply transition-colors duration-500
+
 }
 
 @layer base {
@@ -13,11 +14,15 @@
     }
 
     .title {
-        @apply text-[var(--title-light)] dark:text-[var(--title-dark)]
+        @apply text-[var(--title-light)] dark:text-[var(--title-dark)] tracking-wide
+    }
+
+    .text-nav {
+        @apply text-[var(--text-light)] dark:text-[var(--text-dark)] tracking-wide
     }
 
     .text {
-        @apply text-[var(--text-light)] dark:text-[var(--text-dark)]
+        @apply dark:text-[var(--text-light)] text-[var(--text-dark)] font-medium tracking-wider select-none
     }
 
     .scale {
