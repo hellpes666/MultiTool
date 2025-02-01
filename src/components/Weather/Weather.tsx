@@ -11,3 +11,5 @@ const Weather: React.FC = () => {
 };
 
 export default Weather;
+
+// TO-DO: Write documentation

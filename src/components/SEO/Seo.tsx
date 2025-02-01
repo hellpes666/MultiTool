@@ -16,3 +16,5 @@ const SEO: React.FC<MetaProps> = ({ title }) => {
 };
 
 export default SEO;
+
+// TO-DO: Write Documentation
