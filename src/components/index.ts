@@ -9,4 +9,17 @@ import Cinema from './Cinema/Cinema';
 import Friends from './Friends/Friends';
 import Blog from './Blog/Blog';
 
-export { Header, MainPage, Container, SEO, Weather, Cinema, Friends, Blog };
+// Additional
+import PreviewWeather from './Weather/PreviewWeather';
+
+export {
+  Header,
+  MainPage,
+  Container,
+  SEO,
+  Weather,
+  Cinema,
+  Friends,
+  Blog,
+  PreviewWeather,
+};
