@@ -4,6 +4,7 @@ import { Header, MainPage } from './components';
 import Container from './components/Container';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import Weather from './components/Weather/Weather';
+import SEO from './components/SEO/Seo';
 
 function App() {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
@@ -13,7 +14,7 @@ function App() {
       className={`h-full min-h-dvh w-full bg-[var(--bg-dark)] py-4 dark:bg-[var(--bg-light)] ${darkMode && 'dark'}`}
     >
       <BrowserRouter>
-      
+        <SEO title='MultiTool' />
         <Header darkMode={darkMode} />
         <Container>
           <Routes>
