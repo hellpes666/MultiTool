@@ -1,10 +1,10 @@
 import React from 'react';
-import SEO from '../SEO/Seo';
+import { SEO } from '..';
 
 const Weather: React.FC = () => {
   return (
     <div>
-      <SEO title='Weather'></SEO>
+      <SEO title='Weather' />
       <h1>Weather App!</h1>
     </div>
   );

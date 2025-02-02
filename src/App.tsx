@@ -1,13 +1,45 @@
 import { useSelector } from 'react-redux';
 import { RootState } from './store/store';
-import { Header, MainPage } from './components';
-import Container from './components/Container';
+import {
+  Blog,
+  Cinema,
+  Container,
+  Friends,
+  Header,
+  MainPage,
+  SEO,
+  Weather,
+} from './components';
 import { BrowserRouter, Route, Routes } from 'react-router';
-import Weather from './components/Weather/Weather';
-import SEO from './components/SEO/Seo';
 
 function App() {
   const darkMode = useSelector((state: RootState) => state.theme.darkMode);
+  const PAGES: {
+    path: string;
+    element: JSX.Element[];
+  }[] = [
+    {
+      path: '',
+      element: [<MainPage />],
+    },
+    {
+      path: 'weather',
+      element: [<Weather />],
+    },
+    {
+      path: 'cinema',
+      element: [<Cinema />],
+    },
+
+    {
+      path: 'blog',
+      element: [<Blog />],
+    },
+    {
+      path: 'friends',
+      element: [<Friends />],
+    },
+  ];
 
   return (
     <div
@@ -18,14 +50,12 @@ function App() {
         <Header darkMode={darkMode} />
         <Container>
           <Routes>
-            <Route
-              path='/'
-              element={<MainPage />}
-            />
-            <Route
-              path='/weather'
-              element={<Weather />}
-            />
+            {PAGES.map(page => (
+              <Route
+                path={`/${page.path}`}
+                element={page.element}
+              />
+            ))}
           </Routes>
         </Container>
       </BrowserRouter>

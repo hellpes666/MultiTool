@@ -1,7 +1,7 @@
 // store the Route values in enum type
 enum Route {
   Weather = 'Weather',
-  Movies = 'Movies',
+  Cinema = 'Cinema',
   Blog = 'Blog',
   Friends = 'Friends',
 }
@@ -9,7 +9,7 @@ enum Route {
 // Used in Header
 export const ROUTES: Route[] = [
   Route.Weather,
-  Route.Movies,
+  Route.Cinema,
   Route.Blog,
   Route.Friends,
 ];
