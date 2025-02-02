@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { setThemeSetting } from '../features/themeSlice';
 import { ROUTES } from '../helpers/routes/routes';
+import { Link } from 'react-router';
 
 const Header: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   const dispatch = useDispatch();
@@ -20,7 +21,7 @@ const Header: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
               key={index}
               className='scale cursor-pointer text-sm font-bold sm:text-base'
             >
-              {route}
+              <Link to={`/${route.toLowerCase()}`}>{route}</Link>
             </li>
           ))}
         </ul>
