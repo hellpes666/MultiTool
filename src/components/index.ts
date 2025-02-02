@@ -1,5 +1,5 @@
 import Header from './Header';
-import MainPage from './main/MainPage';
+import MainPage from './Main/MainPage';
 import Container from './Container';
 import SEO from './SEO/Seo';
 

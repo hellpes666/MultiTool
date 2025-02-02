@@ -11,13 +11,11 @@ const Header: React.FC<{ darkMode: boolean }> = ({ darkMode }) => {
   return (
     <header className='bg mx-auto flex w-[90%] max-w-[1280px] items-center justify-between rounded-4xl px-6 py-3 select-none sm:px-8 md:h-20 lg:w-[70%]'>
       <Link to='/'>
-        <h2 className='title text-lg font-extrabold sm:text-xl lg:text-2xl'>
-          MultiTool.
-        </h2>
+        <h2 className='title'>MultiTool.</h2>
       </Link>
 
       <nav className='hidden md:block'>
-        <ul className='text-nav flex items-center gap-6 lg:gap-8'>
+        <ul className='text-alt flex items-center gap-6 lg:gap-8'>
           {ROUTES.map((route, index) => (
             <li
               key={index}

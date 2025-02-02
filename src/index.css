@@ -14,10 +14,10 @@
     }
 
     .title {
-        @apply text-[var(--title-light)] dark:text-[var(--title-dark)] tracking-wide
+        @apply text-[var(--title-light)] dark:text-[var(--title-dark)] tracking-wide font-extrabold sm:text-xl lg:text-2xl
     }
 
-    .text-nav {
+    .text-alt {
         @apply text-[var(--text-light)] dark:text-[var(--text-dark)] tracking-wide
     }
 
@@ -32,6 +32,10 @@
     .durationAll-500 {
         @apply !transition-all !duration-500
     }
+
+    /* .standart-section-padding {
+        @apply
+    } */
 }
 
 @theme {
