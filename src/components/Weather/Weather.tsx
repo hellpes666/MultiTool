@@ -50,7 +50,7 @@ const Weather: React.FC = () => {
       <SEO title='Weather' />
       <div className='comingSoon'>
         <div>
-          <h1 className='comingSoonText'>Coming Soon</h1>
+          <h1 className='comingSoonText text text-9xl'>Coming Soon</h1>
         </div>
       </div>
       <div className='rain front-row'></div>

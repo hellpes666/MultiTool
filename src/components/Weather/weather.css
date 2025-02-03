@@ -179,7 +179,7 @@ body.single-toggle .drop:nth-child(10) {
 }
 
 /* Coming Soon part */
-h1 {
+/* h1 {
   font-family: 'Space Grotesk', sans-serif;
   color: #dbd56e;
   background: -webkit-linear-gradient(25deg, #eee, #333);
@@ -195,7 +195,7 @@ h1 {
     cursor 1s step-end infinite;
   position: relative;
   text-align: center;
-}
+} */
 
 @keyframes type {
   from {
